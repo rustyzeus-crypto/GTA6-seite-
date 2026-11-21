@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Leonida Hub – GTA 6 Fanseite</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#f7f3ef;--sf:#fff;--tx:#1d1a22;--mu:#6b6573;--bd:#e3dcd5;--a1:#e8267a;--a2:#ff8a3d;--a3:#0fa3a3}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#110e18;--sf:#1b1726;--tx:#f3eefa;--mu:#a39bb3;--bd:#2c2638;--a1:#ff4d94;--a2:#ffa05a;--a3:#2fd4cf}}
+:root[data-theme="dark"]{--bg:#110e18;--sf:#1b1726;--tx:#f3eefa;--mu:#a39bb3;--bd:#2c2638;--a1:#ff4d94;--a2:#ffa05a;--a3:#2fd4cf}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--sf);z-index:10}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--sf);border-bottom:1px solid var(--bd)}
+.bar{max-width:1000px;margin:auto;display:flex;align-items:center;gap:12px;padding:10px 16px}
+.brand{display:flex;align-items:center;gap:8px;flex:none}.logo{font-weight:900;letter-spacing:.5px;font-size:1.2rem;background:linear-gradient(90deg,var(--a1),var(--a2));-webkit-background-clip:text;background-clip:text;color:transparent}
+nav{display:flex;gap:4px;overflow-x:auto;flex:1;scrollbar-width:none}
+nav a{padding:7px 12px;border-radius:99px;color:var(--mu);text-decoration:none;white-space:nowrap;font-size:.92rem;font-weight:600}
+nav a.on{background:linear-gradient(90deg,var(--a1),var(--a2));color:#fff}
+main{max-width:1000px;margin:auto;padding:20px 16px 48px}
+h1{font-size:1.7rem;margin:.2em 0 .1em}h2{font-size:1.15rem;margin:0 0 .4em}
+.sub{color:var(--mu);margin:0 0 18px}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+.card{background:var(--sf);border:1px solid var(--bd);border-radius:14px;padding:16px}
+.hero{background:linear-gradient(135deg,var(--a1),var(--a2));color:#fff;border:0}
+.hero .sub,.hero small{color:#ffffffcc}
+.tag{display:inline-block;font-size:.72rem;font-weight:700;padding:2px 9px;border-radius:99px;background:color-mix(in srgb,var(--a3) 18%,transparent);color:var(--a3);margin-right:6px}
+small{color:var(--mu)}
+input,select,textarea,button{font:inherit;color:var(--tx)}
+input,select,textarea{width:100%;padding:10px 12px;border:1px solid var(--bd);border-radius:10px;background:var(--bg);margin-bottom:10px}
+button{cursor:pointer;border:1px solid var(--bd);background:var(--sf);border-radius:10px;padding:8px 14px;font-weight:600}
+button.p{background:linear-gradient(90deg,var(--a1),var(--a2));color:#fff;border:0}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.chip{border-radius:99px;padding:6px 12px;font-size:.85rem}
+.chip.on{background:var(--a3);color:#fff;border-color:var(--a3)}
+details{background:var(--sf);border:1px solid var(--bd);border-radius:12px;padding:12px 16px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:700}
+.wrap{overflow-x:auto}
+svg{width:100%;height:auto;border-radius:14px;border:1px solid var(--bd);background:var(--sf);display:block}
+.reg{fill:color-mix(in srgb,var(--a3) 14%,var(--sf));stroke:var(--a3);stroke-width:1.5;cursor:pointer}
+.reg:hover,.reg.sel{fill:color-mix(in srgb,var(--a1) 25%,var(--sf));stroke:var(--a1)}
+.warn{font-size:.85rem;color:var(--mu);border-left:3px solid var(--a2);padding-left:10px;margin:14px 0}
+.thread{margin-bottom:12px}.reply{border-left:3px solid var(--bd);margin:10px 0 0 6px;padding-left:12px}
+.best{border-color:var(--a3)}
+code{background:var(--bg);padding:2px 6px;border-radius:6px}
+footer{text-align:center;color:var(--mu);font-size:.8rem;padding:20px 16px 32px}
+@media(min-width:700px){h1{font-size:2.1rem}}
+</style>
+</head>
+<body>
+<header><div class="bar"><span class="brand"><svg viewBox="0 0 40 40" width="34" height="34" role="img" aria-label="Leonida Hub Logo"><defs><linearGradient id="lgG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff4d94"/><stop offset="1" stop-color="#ffa05a"/></linearGradient></defs><rect width="40" height="40" rx="10" fill="#1b1726"/><circle cx="20" cy="19" r="11" fill="url(#lgG)"/><path d="M8 22.5h24v1.5H8zM8 26h24v2H8z" fill="#1b1726"/><path d="M27 35Q26 25 29 14M29 14q-6-5-11-2M29 14q-1-7-7-8M29 14q5-5 10-2M29 14q3 5 9 5" fill="none" stroke="#2fd4cf" stroke-width="2" stroke-linecap="round"/></svg><span class="logo">LEONIDA HUB</span></span><nav id="nav"></nav></div></header>
+<main id="app"></main>
+<footer>Inoffizielle Fanseite · Nicht mit Rockstar Games oder Take-Two verbunden · Alle Inhalte sind Platzhalter und müssen von dir geprüft werden.</footer>
+
+<script>
+/* ============ DATEN – hier pflegen ============ */
+const NEWS=[
+ {d:"2026-11-20",t:"Beispiel-News: Hier erscheint deine Schlagzeile",x:"Ersetze diesen Eintrag durch geprüfte Meldungen aus offiziellen Quellen. Die Seite zeigt automatisch den Eintrag mit dem neuesten Datum als Aufmacher.",c:"Allgemein"},
+ {d:"2026-11-19",t:"Beispiel: Patch-Notes",x:"Platz für Zusammenfassungen von Updates und Ankündigungen.",c:"Updates"},
+ {d:"2026-11-18",t:"Beispiel: Community-Highlight",x:"Hier kannst du Fan-Projekte, Videos oder Fundstücke vorstellen.",c:"Community"}
+];
+const GUIDES=[
+ {t:"Mission 1 – Platzhalter",s:["Ziel und Voraussetzungen beschreiben","Schritt-für-Schritt-Ablauf eintragen","Tipps für Gold-Bewertung ergänzen"]},
+ {t:"Mission 2 – Platzhalter",s:["Vorbereitung und Ausrüstung","Ablauf der Mission","Mögliche Fehler und Lösungen"]},
+ {t:"Mission 3 – Platzhalter",s:["Ausgangslage","Lösungsweg","Belohnungen"]}
+];
+const EGGS=[
+ {n:"Beispiel-Easter-Egg A",r:"Leonida Keys",k:"Referenz",h:"Beschreibe Fundort, Auslöser und Hinweis."},
+ {n:"Beispiel-Easter-Egg B",r:"Vice City",k:"Versteckt",h:"Beschreibe Fundort, Auslöser und Hinweis."},
+ {n:"Beispiel-Easter-Egg C",r:"Grassrivers",k:"Referenz",h:"Beschreibe Fundort, Auslöser und Hinweis."}
+];
+const CHEATS=[
+ {n:"Noch keine bestätigten Codes",c:"–",p:"Alle",e:"Trage hier nur Codes ein, die du selbst im Spiel geprüft hast. Erfundene Codes schaden der Community."}
+];
+const REGIONS=[
+ {id:"vc",n:"Vice City",x:330,y:230,w:150,h:110,i:"Metropole an der Küste. Eintrag ergänzen."},
+ {id:"lk",n:"Leonida Keys",x:330,y:350,w:150,h:60,i:"Inselkette im Süden. Eintrag ergänzen."},
+ {id:"gr",n:"Grassrivers",x:150,y:230,w:170,h:120,i:"Sumpf- und Flussland. Eintrag ergänzen."},
+ {id:"pg",n:"Port Gellhorn",x:150,y:120,w:170,h:100,i:"Hafenstadt. Eintrag ergänzen."},
+ {id:"am",n:"Ambrosia",x:330,y:100,w:150,h:120,i:"Industrie- und Agrarland. Eintrag ergänzen."},
+ {id:"kn",n:"Kalaga-Nationalpark",x:150,y:360,w:170,h:70,i:"Naturschutzgebiet. Eintrag ergänzen."}
+];
+const MARKERS=[
+ {k:"Missionen",x:400,y:280,n:"Beispiel-Missionsstart"},{k:"Easter Eggs",x:230,y:290,n:"Beispiel-Fundort"},
+ {k:"Sammelobjekte",x:240,y:170,n:"Beispiel-Sammelobjekt"},{k:"Missionen",x:405,y:150,n:"Beispiel-Missionsstart"},
+ {k:"Easter Eggs",x:420,y:380,n:"Beispiel-Fundort"},{k:"Sammelobjekte",x:220,y:395,n:"Beispiel-Sammelobjekt"}
+];
+const MAPUPD=[
+ "Neue Marker für Sammelobjekte in Port Gellhorn prüfen.",
+ "Easter-Egg-Fundorte in Vice City mit Community-Hinweisen abgleichen.",
+ "Mission-Startpunkte in den Leonida Keys aktualisieren.",
+ "Routen und Schnellreise-Punkte im Nationalpark ergänzen.",
+ "Neue Screenshots der Region Ambrosia einpflegen."
+];
+
+/* ============ Helfer ============ */
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const fmt=d=>new Date(d).toLocaleDateString("de-DE",{day:"2-digit",month:"long",year:"numeric"});
+const dayIdx=()=>Math.floor(Date.now()/864e5);
+const VIEWS={news:"News",guides:"Guides",eggs:"Easter Eggs",cheats:"Cheats",map:"Karte",forum:"Forum"};
+const store={get(k,f){try{const v=localStorage.getItem(k);return v?JSON.parse(v):f}catch(e){return f}},
+ set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+
+/* ============ Views ============ */
+function news(){
+ const s=[...NEWS].sort((a,b)=>b.d.localeCompare(a.d)),top=s[0];
+ return `<h1>Tägliche News</h1><p class="sub">Heute: ${fmt(new Date())}</p>
+ <div class="card hero" style="margin-bottom:14px"><span class="tag" style="background:#ffffff33;color:#fff">${esc(top.c)}</span>
+ <h2 style="font-size:1.4rem">${esc(top.t)}</h2><p>${esc(top.x)}</p><small>${fmt(top.d)}</small></div>
+ <div class="grid">${s.slice(1).map(n=>`<article class="card"><span class="tag">${esc(n.c)}</span><h2>${esc(n.t)}</h2><p>${esc(n.x)}</p><small>${fmt(n.d)}</small></article>`).join("")}</div>
+ <p class="warn">Automatisierung: Die Seite sortiert Einträge aus der Liste <code>NEWS</code> nach Datum und hebt den neuesten hervor. Für echte Live-News brauchst du einen Server, der die Liste täglich aktualisiert (z. B. per Cron-Job und RSS-Feed).</p>`;
+}
+function guides(){
+ return `<h1>Story-Guides</h1><p class="sub">Schritt für Schritt durch die Missionen.</p>`+
+ GUIDES.map(g=>`<details><summary>${esc(g.t)}</summary><ol>${g.s.map(x=>`<li>${esc(x)}</li>`).join("")}</ol></details>`).join("");
+}
+let eggQ="",eggK="Alle";
+function eggs(){
+ const ks=["Alle",...new Set(EGGS.map(e=>e.k))];
+ const list=EGGS.filter(e=>(eggK==="Alle"||e.k===eggK)&&(e.n+e.r+e.h).toLowerCase().includes(eggQ.toLowerCase()));
+ return `<h1>Easter-Egg-Datenbank</h1><p class="sub">Suchen und filtern.</p>
+ <input id="eq" placeholder="Suchen …" value="${esc(eggQ)}" aria-label="Suche">
+ <div class="row" style="margin-bottom:14px">${ks.map(k=>`<button class="chip ${k===eggK?"on":""}" data-k="${esc(k)}">${esc(k)}</button>`).join("")}</div>
+ <div class="grid" id="egl">${eggList(list)}</div>`;
+}
+const eggList=l=>l.length?l.map(e=>`<div class="card"><span class="tag">${esc(e.k)}</span><h2>${esc(e.n)}</h2><small>${esc(e.r)}</small><p>${esc(e.h)}</p></div>`).join(""):"<p>Keine Treffer.</p>";
+function cheats(){
+ return `<h1>Cheat-Codes</h1><p class="sub">Nur geprüfte Codes.</p><div class="grid">`+
+ CHEATS.map(c=>`<div class="card"><span class="tag">${esc(c.p)}</span><h2>${esc(c.n)}</h2><p>Code: <code>${esc(c.c)}</code></p><small>${esc(c.e)}</small></div>`).join("")+`</div>`;
+}
+let sel="vc",cats=new Set(["Missionen","Easter Eggs","Sammelobjekte"]);
+function map(){
+ const r=REGIONS.find(x=>x.id===sel),u=MAPUPD[dayIdx()%MAPUPD.length];
+ const col={Missionen:"var(--a1)","Easter Eggs":"var(--a2)",Sammelobjekte:"var(--a3)"};
+ return `<h1>Interaktive Karte</h1><p class="sub">Stilisierte Platzhalterkarte – tippe auf eine Region.</p>
+ <div class="row" style="margin-bottom:12px">${Object.keys(col).map(k=>`<button class="chip ${cats.has(k)?"on":""}" data-c="${k}">${k}</button>`).join("")}</div>
+ <div class="wrap"><svg viewBox="0 0 640 460" role="img" aria-label="Karte">
+ ${REGIONS.map(g=>`<rect class="reg ${g.id===sel?"sel":""}" data-r="${g.id}" x="${g.x}" y="${g.y}" width="${g.w}" height="${g.h}" rx="14"/><text x="${g.x+g.w/2}" y="${g.y+g.h/2}" text-anchor="middle" font-size="13" fill="var(--tx)" pointer-events="none">${esc(g.n)}</text>`).join("")}
+ ${MARKERS.filter(m=>cats.has(m.k)).map(m=>`<circle cx="${m.x}" cy="${m.y}" r="7" fill="${col[m.k]}" stroke="#fff" stroke-width="2"><title>${esc(m.n)}</title></circle>`).join("")}
+ </svg></div>
+ <div class="grid" style="margin-top:14px"><div class="card"><h2>${esc(r.n)}</h2><p>${esc(r.i)}</p></div>
+ <div class="card hero"><h2>Karten-Update des Tages</h2><p>${esc(u)}</p><small>${fmt(new Date())}</small></div></div>`;
+}
+/* Forum (lokal im Browser gespeichert) */
+let threads=store.get("lh_threads",[
+ {id:1,t:"Willkommen im Forum",b:"Stellt hier eure Fragen und helft euch gegenseitig.",a:"Admin",up:3,best:null,r:[]},
+ {id:2,t:"Wie finde ich gute Spawnpunkte für Sammelobjekte?",b:"Habt ihr Tipps für effiziente Routen?",a:"Gast",up:1,best:null,r:[]}]);
+let me=store.get("lh_name","Gast"),open=null;
+let DB=null,UID=null,tRows=[],rRows=[];
+const save=()=>{if(!DB)store.set("lh_threads",threads)};
+const rid=()=>Date.now().toString(36)+Math.random().toString(36).slice(2,6);
+const canBest=t=>DB?t.uid===UID:true;
+const oops=()=>alert("Schreiben nicht erlaubt (Anmeldung mit Schreibrechten nötig).");
+function newThread(t,b){me=$("#nm").value.trim()||"Gast";store.set("lh_name",me);
+ if(DB)DB.collection("threads").add({t,b,a:me,uid:UID,ts:Date.now(),best:null}).catch(oops);
+ else{threads.unshift({id:Date.now(),t,b,a:me,up:0,best:null,r:[]});save();render()}}
+function addReply(t,b){
+ if(DB)DB.collection("replies").add({tid:t.id,b,a:me,uid:UID,ts:Date.now(),up:0}).catch(oops);
+ else{t.r.push({id:rid(),b,a:me,up:0});save();render()}}
+function upvote(t,i){const r=t.r[i];
+ if(DB)DB.doc("replies/"+r.id).update({up:(r.up||0)+1}).catch(oops);else{r.up++;save();render()}}
+function setBest(t,i){const r=t.r[i];
+ if(DB)DB.doc("threads/"+t.id).update({best:r.id}).catch(oops);else{t.best=r.id;save();render()}}
+function rebuild(){
+ threads=tRows.map(t=>({...t,r:rRows.filter(r=>r.tid===t.id).sort((a,b)=>a.ts-b.ts)})).sort((a,b)=>b.ts-a.ts);
+ const ae=document.activeElement;
+ if(location.hash.slice(1)==="forum"&&!(ae&&/INPUT|TEXTAREA/.test(ae.tagName)))render()}
+function forum(){
+ if(open){const t=threads.find(x=>String(x.id)===String(open));if(!t){open=null;return forum()}return `<button id="back">← Zurück</button>
+ <div class="card thread" style="margin-top:12px"><h1 style="font-size:1.4rem">${esc(t.t)}</h1><small>von ${esc(t.a)}</small><p>${esc(t.b)}</p>
+ ${t.r.map((r,i)=>`<div class="reply card ${t.best===r.id?"best":""}">${t.best===r.id?'<span class="tag">Beste Antwort</span>':""}<p>${esc(r.b)}</p><small>${esc(r.a)}</small>
+ <div class="row"><button data-up="${i}">▲ ${r.up}</button>${canBest(t)?`<button data-best="${i}">Als Lösung markieren</button>`:""}</div></div>`).join("")}
+ <textarea id="rb" rows="3" placeholder="Deine Antwort …"></textarea><button class="p" id="rs">Antworten</button></div>`}
+ return `<h1>Community-Forum</h1><p class="sub">Fragen stellen, Antworten geben.</p>
+ <div class="card" style="margin-bottom:14px"><input id="nm" placeholder="Dein Name" value="${esc(me)}" maxlength="24">
+ <input id="tt" placeholder="Titel deiner Frage" maxlength="120"><textarea id="tb" rows="3" placeholder="Beschreibung"></textarea><button class="p" id="ts">Thema erstellen</button></div>
+ ${threads.map(t=>`<div class="card thread"><h2><a href="#forum" data-o="${t.id}" style="color:inherit">${esc(t.t)}</a></h2><small>${esc(t.a)} · ${t.r.length} Antworten · ▲ ${t.up}${t.best!=null?" · ✔ gelöst":""}</small></div>`).join("")}
+ ${threads.length?"":"<p>Noch keine Themen – starte das erste!</p>"}${DB?'<p class="warn">Gemeinsames Forum: Beiträge sind für alle sichtbar, die diese Seite angemeldet öffnen können. Schreiben dürfen nur Personen mit Schreibrechten (mind. Contributor). Als Lösung markieren darf nur, wer das Thema erstellt hat.</p>':'<p class="warn">Offline-Modus: Beiträge werden nur in deinem Browser gespeichert. Mit Anmeldung auf claude.ai wird das Forum gemeinsam genutzt.</p>'}`;
+}
+
+/* ============ Rendering & Events ============ */
+const R={news,guides,eggs,cheats,map,forum};
+function render(){
+ const v=R[location.hash.slice(1)]?location.hash.slice(1):"news";
+ $("#nav").innerHTML=Object.entries(VIEWS).map(([k,l])=>`<a href="#${k}" class="${k===v?"on":""}">${l}</a>`).join("");
+ $("#app").innerHTML=R[v]();bind(v);
+}
+function bind(v){
+ const A=$("#app");
+ if(v==="eggs"){
+  $("#eq").oninput=e=>{eggQ=e.target.value;$("#egl").innerHTML=eggList(EGGS.filter(x=>(eggK==="Alle"||x.k===eggK)&&(x.n+x.r+x.h).toLowerCase().includes(eggQ.toLowerCase())))};
+  A.querySelectorAll("[data-k]").forEach(b=>b.onclick=()=>{eggK=b.dataset.k;render()});
+ }
+ if(v==="map"){
+  A.querySelectorAll("[data-r]").forEach(b=>b.onclick=()=>{sel=b.dataset.r;render()});
+  A.querySelectorAll("[data-c]").forEach(b=>b.onclick=()=>{const c=b.dataset.c;cats.has(c)?cats.delete(c):cats.add(c);render()});
+ }
+ if(v==="forum"){
+  A.querySelectorAll("[data-o]").forEach(a=>a.onclick=e=>{e.preventDefault();open=a.dataset.o;render()});
+  const bk=$("#back");if(bk)bk.onclick=()=>{open=null;render()};
+  const ts=$("#ts");if(ts)ts.onclick=()=>{const t=$("#tt").value.trim(),b=$("#tb").value.trim();if(!t||!b)return;
+   newThread(t,b)};
+  const rs=$("#rs");if(rs){const t=threads.find(x=>String(x.id)===String(open));
+   rs.onclick=()=>{const b=$("#rb").value.trim();if(!b)return;addReply(t,b)};
+   A.querySelectorAll("[data-up]").forEach(b=>b.onclick=()=>{upvote(t,+b.dataset.up)});
+   A.querySelectorAll("[data-best]").forEach(b=>b.onclick=()=>{setBest(t,+b.dataset.best)});}
+ }
+}
+window.addEventListener("hashchange",()=>{open=null;render()});
+render();
+(async()=>{try{
+ const [db,user]=await Promise.all([claude.use("db"),claude.use("user")]);
+ if(!db||!user)return;
+ UID=await user.id();
+ const up=()=>{DB=db;rebuild()};
+ db.collection("threads").onSnapshot(s=>{tRows=s.docs.map(d=>({id:d.id,...d.data()}));up()},()=>{});
+ db.collection("replies").onSnapshot(s=>{rRows=s.docs.map(d=>({id:d.id,...d.data()}));up()},()=>{});
+}catch(e){}})();
+</script>
+</body>
+</html>

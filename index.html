@@ -56,11 +56,11 @@ footer{text-align:center;color:var(--mu);font-size:.8rem;padding:20px 16px 32px}
 
 <script>
 /* ============ DATEN – hier pflegen ============ */
-const NEWS=[
- {d:"2026-11-20",t:"Beispiel-News: Hier erscheint deine Schlagzeile",x:"Ersetze diesen Eintrag durch geprüfte Meldungen aus offiziellen Quellen. Die Seite zeigt automatisch den Eintrag mit dem neuesten Datum als Aufmacher.",c:"Allgemein"},
- {d:"2026-11-19",t:"Beispiel: Patch-Notes",x:"Platz für Zusammenfassungen von Updates und Ankündigungen.",c:"Updates"},
- {d:"2026-11-18",t:"Beispiel: Community-Highlight",x:"Hier kannst du Fan-Projekte, Videos oder Fundstücke vorstellen.",c:"Community"}
-];
+const NEWS=/*NEWS_START*/[
+ {"d": "2026-11-20", "t": "Beispiel-News: Hier erscheint deine Schlagzeile", "x": "Ersetze diesen Eintrag durch geprüfte Meldungen aus offiziellen Quellen.", "c": "Allgemein"},
+ {"d": "2026-11-19", "t": "Beispiel: Patch-Notes", "x": "Platz für Zusammenfassungen von Updates und Ankündigungen.", "c": "Updates"},
+ {"d": "2026-11-18", "t": "Beispiel: Community-Highlight", "x": "Hier kannst du Fan-Projekte, Videos oder Fundstücke vorstellen.", "c": "Community"}
+]/*NEWS_END*/;
 const GUIDES=[
  {t:"Mission 1 – Platzhalter",s:["Ziel und Voraussetzungen beschreiben","Schritt-für-Schritt-Ablauf eintragen","Tipps für Gold-Bewertung ergänzen"]},
  {t:"Mission 2 – Platzhalter",s:["Vorbereitung und Ausrüstung","Ablauf der Mission","Mögliche Fehler und Lösungen"]},
@@ -109,8 +109,8 @@ function news(){
  const s=[...NEWS].sort((a,b)=>b.d.localeCompare(a.d)),top=s[0];
  return `<h1>Tägliche News</h1><p class="sub">Heute: ${fmt(new Date())}</p>
  <div class="card hero" style="margin-bottom:14px"><span class="tag" style="background:#ffffff33;color:#fff">${esc(top.c)}</span>
- <h2 style="font-size:1.4rem">${esc(top.t)}</h2><p>${esc(top.x)}</p><small>${fmt(top.d)}</small></div>
- <div class="grid">${s.slice(1).map(n=>`<article class="card"><span class="tag">${esc(n.c)}</span><h2>${esc(n.t)}</h2><p>${esc(n.x)}</p><small>${fmt(n.d)}</small></article>`).join("")}</div>
+ <h2 style="font-size:1.4rem">${esc(top.t)}</h2><p>${esc(top.x)}</p><small>${fmt(top.d)}</small>${top.u?`<p><a href="${esc(top.u)}" target="_blank" rel="noopener">Zur Quelle</a></p>`:""}</div>
+ <div class="grid">${s.slice(1).map(n=>`<article class="card"><span class="tag">${esc(n.c)}</span><h2>${esc(n.t)}</h2><p>${esc(n.x)}</p><small>${fmt(n.d)}</small>${n.u?`<p><a href="${esc(n.u)}" target="_blank" rel="noopener">Zur Quelle</a></p>`:""}</article>`).join("")}</div>
  <p class="warn">Automatisierung: Die Seite sortiert Einträge aus der Liste <code>NEWS</code> nach Datum und hebt den neuesten hervor. Für echte Live-News brauchst du einen Server, der die Liste täglich aktualisiert (z. B. per Cron-Job und RSS-Feed).</p>`;
 }
 function guides(){
